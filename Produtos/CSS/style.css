@@ -1,0 +1,99 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+    padding: 50px;
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+h1{
+
+    font-size: 20pt;
+    font-weight: lighter;
+    font-family: "arial";
+    text-align: center;
+    color: white;
+}
+
+main{
+
+    width: 70vw;
+    margin: 150px auto 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divPD1{
+
+    width: 46%;
+    margin: 20px;
+    box-shadow: 5px 5px 10px silver;
+}
+
+.img1{
+
+    width: 100%;
+    height: auto;
+}
+
+.divPD2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img2{
+
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+}
+
+.p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.divCard{
+
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px; 
+    left: 0;
+    height: 0vh;
+    width: 100vw;
+    z-index: 10000;
+    transition: ease 0.5s;
+    
+}
+
+.fechar{
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    z-index: 10050;
+    background-color: rgb(255, 153, 0);
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+
