@@ -1,16 +1,28 @@
 
+/*
+    Criar a divCard para exibir as imagens dos produtos ao clicar na foto de miniatura do produto
+*/
 const divCard = document.createElement('div');
 divCard.setAttribute('class', "divCard");
 divCard.setAttribute('class', "divCard"); 
+
+/*
+    Foi criado um elemento de html para a tag de link (a) para fechar o divCard. Quando o usuário clicar o botão fechar será chamada uma função que recolhe a divCard.
+*/
 
 const fechar = document.createElement('a');
 fechar.innerHTML = "Fechar";
 fechar.setAttribute('class', "fechar");
 divCard.appendChild(fechar);
 
+/*
+    Criar uma imagem para que ao clicar nas fotos dos produtos seja mostrado a foto selecionada 
+*/
+
 const imgCard = document.createElement('img');
 imgCard.setAttribute('id', "imgCard");
 divCard.appendChild(imgCard);
+
 
 //função não é reutilizada, ou seja ela só consegue ser utilizada no botão fechar.
 fechar.onclick = function(){
@@ -18,7 +30,6 @@ fechar.onclick = function(){
     document.getElementsByClassName("divCard")[0].style.height = "0vh";
     document.getElementById("imgCard").style.opacity = "0";
 }
-
 
 
 
